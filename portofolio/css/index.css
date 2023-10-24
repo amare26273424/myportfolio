@@ -1,0 +1,619 @@
+
+html{
+    scroll-behavior: smooth;
+}
+* {
+    text-decoration: none;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    color: white;
+    
+    /* overflow-x: hidden; */
+
+}
+
+/* *::first-letter{
+    color: red;
+} */
+body {
+    background-color: rgba(0, 0, 0, 0.891);
+    margin: 0px 0px;
+  
+
+}
+
+/*  start of the header */
+header {
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(15, 8, 8, 0.717);
+    width: 100%;
+    height: 50px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h2::first-letter {
+    color: red;
+}
+
+/*   */
+#headerdiv2,
+a {
+    font-size: large;
+    margin-left: 20px;
+    color: white;
+}
+
+.menubar {
+    display: none;
+    color: red;
+    font-size: 30px;
+}
+
+
+
+/* end of the header */
+
+/* start of the home */
+#home {
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+#homeword {
+    color: white;
+    width: 100%;
+    height: 100%;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.859);
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("/photo/muha-ajjan-sL2BRR1cuvM-unsplash\ -\ Copy.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: background 10000ms 2500ms infinite;
+}
+
+#homeword h1 {
+    font-size: 40px;
+}
+
+@keyframes background {
+
+    33% {
+        background-image: url("/photo/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg");
+
+    }
+
+
+
+    67% {
+        background-image: url('/photo/nate-grant-QQ9LainS6tI-unsplash.jpg');
+        align-items: flex-start;
+        padding-left: 35%;
+
+    }
+
+}
+
+/* end of home */
+
+/* start of about me */
+#about {
+   padding: 0 4vw ;  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    /* background-color: rgba(255, 255, 255, 0.393);  */
+}
+
+#about h1::first-letter {
+    color: red;
+}
+
+#aboutword {
+    /* background-color: rgb(15, 113, 199); */
+  
+    display: flex;
+    align-items: center;
+     justify-content: space-evenly; 
+    column-gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    color: white;
+    z-index: -1;
+ 
+
+}
+
+#skillanddownloads {
+    height: 100%;
+    width: 350px; 
+    display: flex;
+    justify-content: space-a;
+    flex-direction: column;
+}
+
+#skillanddownloads button {
+    width: auto;
+    color: red;
+}
+
+#aboutword h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    opacity: 0.8;
+
+
+}
+
+#aboutpohoto {
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #333333;
+}
+
+
+
+/* start of service */
+
+
+#service {
+
+     margin:50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5vw;
+    width: auto;
+    height: auto;
+    color: white;
+  
+}
+
+#servicediv {
+   
+    /* background-color: red;  */
+   
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; 
+    gap: 30px;
+  
+}
+
+#servicediv p {
+    font-size: 28px;
+    border-bottom: 1px rgba(255, 0, 0, 0.475) solid;
+}
+#servicediv h4 {
+    font-size: 17px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#servicediv div {
+   
+    
+    text-align: center;  
+    width: 270px;
+    height: 300px;
+    color: white;
+    background-color: black;
+
+}
+
+#servicediv div:hover {
+transform: scale(1.01);
+ background-color: rgba(255, 0, 0, 0.735);
+ border-radius: 20px;
+
+}
+
+
+#service h1::first-letter {
+    color: red;
+}
+
+
+
+#servicediv div p {
+    color: white;
+}
+
+
+/* end of service */
+
+/* start of projects */
+#projects {
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: auto;
+    /* text-align: center; */
+    color: white;
+
+}
+
+#projects h1::first-letter {
+    color: red;
+}
+
+#projects h1 {
+    font-size: 35px;
+}
+
+
+#projecstdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+     row-gap: 50px;
+}
+
+#projecstdiv a {
+  
+    height: 270px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align: center;
+    /* transition: all 0.3s ease-in-out; */
+}
+#projecstdiv a h2 {
+    height: 70px;
+}
+#projecstdiv a:hover{
+    transform: scale(1.05);
+    background-color: red;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.672);
+    border-radius: 10px;
+}
+
+
+
+.projectimage {
+
+    width: 230px;
+    height: 200px;
+   
+}
+
+
+/* end of projects */
+
+
+
+/* start of contact */
+#contact {
+    /* background-color: yellow; */
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 400px;
+
+
+}
+
+#contactdiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.formclass {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+.addedclass {
+    display: flex;
+}
+
+/* end of projects */
+
+
+/* start of skill */
+#skill {
+
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    color: white;
+
+}
+
+#skill2 {
+    width: 70%;
+}
+
+#skill h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#skill .skillclass {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: #333333 2px solid;
+}
+
+
+
+
+
+
+#contact a:hover{
+        border-bottom: green 2px solid;
+        border-top: green 2px solid;
+        color:green;
+}
+
+#fottor1  a:hover{
+    border-bottom: green 2px solid;
+    border-top: green 2px solid;
+   
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of footer */
+
+#fottor1 {
+
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #333333;
+    opacity: 0.6;
+    padding: 0 50px;
+    /* background-color: rgba(0, 0, 0, 0.314); */
+    width: 100%;
+    height: 200px;
+}
+
+
+
+/* #fottor1 div a:hover{
+    color:black; 
+    background-color:white;
+  
+}  */
+#fottor1 div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 750px)and (max-width:900px) {
+
+   
+
+
+    
+}
+
+#fottor1 {
+    height: 300px;
+}
+
+
+
+
+@media screen and (max-width: 750px) {
+
+    #skillanddownloads {
+
+        padding-left: 30px;
+    }
+
+   
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #about {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+        background-color: none;
+    }
+
+    
+
+    #aboutword {
+
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+       
+        justify-content: center;
+        align-items: center;
+       
+        color: white;
+        flex-wrap: nowrap;
+
+    }
+
+    /* #projects{
+    padding-left:70px;
+   }  */
+
+
+    /* end of about*/
+
+
+
+    #homeword h1 {
+        font-size: 30px;
+    }
+
+
+    #service {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+
+
+
+    header {
+        justify-content: space-between;
+        padding: 0 20px 0 40px;
+        width: 100vw;
+    }
+
+    #headcontact {
+        display: none;
+    }
+
+    .headerdiv2 {
+        display: none;
+    }
+
+    .menubar {
+
+        display: block;
+        z-index: 4;
+    }
+
+    #headermenubar {
+        margin-top: 5px;
+
+        /* margin-right: 5px; */
+    }
+
+    .addedheaderdiv2 {
+
+
+        display: flex;
+        flex-direction: column;
+        
+       
+        position: fixed;
+        top: 50px;
+        left: -30px;
+        width: 300px;
+        height:calc(100vh - 50px);
+        background-color: rgba(255, 255, 255);
+
+
+    }
+
+    #headerdiv2 a {
+position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        min-height: 60px;
+        margin-top: 20px;
+        background-color: rgb(0, 0, 0);
+        border-radius:10px;
+        height: 30px;
+
+        color: white;
+    }
+
+
+   
+
+    #aboutpohoto {
+        width: 200px;
+        height: 250px;
+    }
+
+    #fottor1 {
+        height: 400px;
+        z-index: 1;
+    }
+
+    #contact {
+        margin-top: 200px;
+    }
+
+}
